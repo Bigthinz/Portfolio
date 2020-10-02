@@ -1,0 +1,66 @@
+.profile-head{
+    background:linear-gradient(#010104 15%, #090B1B);
+    height: 90vh;
+    width: 100%;
+
+
+    .wrap{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+
+        .profile-title{
+
+            p{
+                margin: 25px 0px;
+            }
+
+            h1{
+                font-size: 60px !important;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+
+
+            .intro{
+                font-size: 17px;
+                line-height: 27px;
+            }
+
+            a{
+                text-decoration: none;
+                color: #fff;
+                background:#5145F8;
+                padding: 10px 20px;
+                border-radius: 15px 0px;
+                text-transform: capitalize;
+            }
+
+            .social{
+                font-size: 17px !important;
+                text-transform: uppercase;
+                padding: 10px 20px 0px 0px;
+            }
+        }
+
+        .profile-img{
+            border-radius: 50%;
+            overflow: hidden;
+            width: 340px;
+            height: 340px;
+
+
+            img{
+                object-fit: cover;
+                
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+
+    }
+}
+
+
