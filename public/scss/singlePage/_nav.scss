@@ -1,57 +1,51 @@
-nav{
-    width: 100%;
-    background:#010104;
-    border-bottom: 1px solid #333;
-    
-    
+@import 'variables';
+header {
+    background: url('../images/Background.jpg');
+    background-size: cover;
+}
 
-    .wrap{
+nav {
+    width: 100%;
+    border-bottom: 2px solid #09080D;
+    .wrap {
         width: 70%;
         height: 60px;
-        display:flex;
+        display: flex;
         justify-content: space-between;
         align-items: center;
         margin: auto;
-        
-        
-
-        .nav-start{
+        .nav-start {
             display: flex;
             justify-content: space-between;
             align-items: center;
             width: 60%;
-
-
-            .logo{
-
+            .logo {
+                img {
+                    width: 40px;
+                }
             }
-
-            .nav-list{
+            .nav-list {
                 color: white;
-
-                ul{
+                ul {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
                     width: 400px;
                     text-transform: capitalize;
-
-                    li{
+                    li {
                         list-style: none;
-
-                        a{
+                        a {
                             text-decoration: none;
-                            color: #fff;
+                            color: $nav-color;
                         }
                     }
                 }
             }
         }
-
-        .humburger{
+        .humburger {
             font-size: 30px;
             font-weight: bold;
-            position:absolute;
+            position: absolute;
         }
     }
 }

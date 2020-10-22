@@ -1,18 +1,23 @@
-*{
+@font-face {
+    src: url('../fonts/RobotoSlab-VariableFont_wght.ttf');
+    font-family: Ibm;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
 }
 
-body{
-    background: #090B1B;
-    color:#fff;
+body {
+    // background: #090B1B;
+    color: #fff;
     font-size: 13px;
-    
+    font-family: Ibm;
 }
 
-.wrap{
+.wrap {
     width: 70%;
+    height: 100%;
     margin: auto;
 }

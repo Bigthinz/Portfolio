@@ -1,7 +1,11 @@
+header {
+  background: url("../images/Background.jpg");
+  background-size: cover;
+}
+
 nav {
   width: 100%;
-  background: #010104;
-  border-bottom: 1px solid #333;
+  border-bottom: 2px solid #09080D;
 }
 nav .wrap {
   width: 70%;
@@ -16,6 +20,9 @@ nav .wrap .nav-start {
   justify-content: space-between;
   align-items: center;
   width: 60%;
+}
+nav .wrap .nav-start .logo img {
+  width: 40px;
 }
 nav .wrap .nav-start .nav-list {
   color: white;
@@ -32,7 +39,7 @@ nav .wrap .nav-start .nav-list ul li {
 }
 nav .wrap .nav-start .nav-list ul li a {
   text-decoration: none;
-  color: #fff;
+  color: #C3C3C3;
 }
 nav .wrap .humburger {
   font-size: 30px;
@@ -40,26 +47,33 @@ nav .wrap .humburger {
   position: absolute;
 }
 
+@font-face {
+  src: url("../fonts/RobotoSlab-VariableFont_wght.ttf");
+  font-family: Ibm;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
 }
 
 body {
-  background: #090B1B;
   color: #fff;
   font-size: 13px;
+  font-family: Ibm;
 }
 
 .wrap {
   width: 70%;
+  height: 100%;
   margin: auto;
 }
 
+@font-face {
+  src: url("../fonts/Orbitron-VariableFont_wght.ttf");
+  font-family: Oswald;
+}
 .profile-head {
-  background: linear-gradient(#010104 15%, #090B1B);
   height: 90vh;
   width: 100%;
 }
@@ -73,13 +87,16 @@ body {
   margin: 25px 0px;
 }
 .profile-head .wrap .profile-title h1 {
+  font-family: Oswald;
   font-size: 60px !important;
-  font-weight: bold;
+  font-weight: 900;
   text-transform: uppercase;
+  letter-spacing: 10px;
 }
 .profile-head .wrap .profile-title .intro {
   font-size: 17px;
   line-height: 27px;
+  color: #C3C3C3;
 }
 .profile-head .wrap .profile-title a {
   text-decoration: none;
@@ -93,16 +110,91 @@ body {
   font-size: 17px !important;
   text-transform: uppercase;
   padding: 10px 20px 0px 0px;
+  color: #C3C3C3;
+  font-family: Oswald;
 }
 .profile-head .wrap .profile-img {
   border-radius: 50%;
   overflow: hidden;
   width: 340px;
   height: 340px;
+  position: relative;
+  right: 100px;
 }
 .profile-head .wrap .profile-img img {
-  object-fit: cover;
+  object-fit: contain;
   width: 100%;
   height: 100%;
+}
+
+.about {
+  width: 100%;
+  height: 600px;
+  background: #070916;
+  margin: auto;
+}
+.about .wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.about .wrap .about-pin {
+  width: 100%;
+  height: inherit;
+  overflow: hidden;
+}
+.about .wrap .about-pin .title {
+  color: #EA694D;
+  transform: translateY(50px);
+  font-size: 17px;
+  text-transform: capitalize;
+  position: relative;
+}
+.about .wrap .about-pin .title::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  background: #EA694D;
+  left: 100px;
+  top: 50%;
+}
+.about .wrap .about-pin .row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100px);
+}
+.about .wrap .about-pin .row .about-detail {
+  height: 100%;
+  width: 40%;
+}
+.about .wrap .about-pin .row .about-detail div {
+  margin-bottom: 25px;
+}
+.about .wrap .about-pin .row .about-detail div h3 {
+  margin-bottom: 10px;
+}
+.about .wrap .about-pin .row .about-panel-2 {
+  width: 40%;
+}
+.about .wrap .about-pin .row .about-panel-2 h3 {
+  color: #9D52E9;
+  font-size: 17px;
+}
+.about .wrap .about-pin .row .about-panel-2 a {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  border-radius: 15px 0px;
+  text-transform: capitalize;
+}
+.about .wrap .about-pin .row .about-panel-2 a:hover {
+  background: #9D52E9;
+  border: none;
+}
+.about .wrap .about-pin .row .about-panel-2 p {
+  margin: 40px 0px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,9 @@
+$primary-color: #090B1B;
+$secondary-color:#9D52E9;
+$next-color: #EA694D;
+$nav-color:#C3C3C3;
+@mixin flex {
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+}
