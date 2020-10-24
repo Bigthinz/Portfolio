@@ -1,0 +1,37 @@
+@import 'variables';
+.tech {
+    background: url('../images/serviceBac.jpg');
+    background-size: cover;
+    .wrap {
+        display: flex;
+        align-items: center;
+        .tech-main {
+            width: 100%;
+            .tech-head {
+                margin-bottom: 50px;
+                h3 {
+                    color: $secondary-color;
+                    margin-bottom: 10px;
+                }
+            }
+            .tech-card {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                text-align: center;
+                h3 {
+                    color: $next-color;
+                    margin-bottom: 15px;
+                    text-transform: capitalize;
+                }
+                .card {
+                    width: 24%;
+                    background-color: rgba(9, 13, 31, .6);
+                    height: 200px;
+                    padding-top: 40px;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}

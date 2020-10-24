@@ -1,5 +1,5 @@
 header {
-  background: url("../images/Background.jpg");
+  background: linear-gradient(#000004 10.35%, #070916 100%);
   background-size: cover;
 }
 
@@ -69,6 +69,21 @@ body {
   margin: auto;
 }
 
+::-webkit-scrollbar {
+  background: #090B1B;
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 8px #090B1B;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(125deg, #A255F0, #4385F4);
+  border-radius: 8px;
+}
+
 @font-face {
   src: url("../fonts/Orbitron-VariableFont_wght.ttf");
   font-family: Oswald;
@@ -76,6 +91,9 @@ body {
 .profile-head {
   height: 90vh;
   width: 100%;
+  background: url("../images/boxes.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .profile-head .wrap {
   display: flex;
@@ -169,10 +187,13 @@ body {
   height: 100%;
   width: 40%;
 }
-.about .wrap .about-pin .row .about-detail div {
+.about .wrap .about-pin .row .about-detail .card {
+  border-radius: 7px;
+  padding: 10px;
   margin-bottom: 25px;
+  box-shadow: 0px 3px 5px 5px rgba(9, 8, 13, 0.32);
 }
-.about .wrap .about-pin .row .about-detail div h3 {
+.about .wrap .about-pin .row .about-detail .card h3 {
   margin-bottom: 10px;
 }
 .about .wrap .about-pin .row .about-panel-2 {
@@ -196,5 +217,49 @@ body {
 }
 .about .wrap .about-pin .row .about-panel-2 p {
   margin: 40px 0px;
+}
+
+.tech {
+  background: url("../images/serviceBac.jpg");
+  background-size: cover;
+}
+.tech .wrap {
+  display: flex;
+  align-items: center;
+}
+.tech .wrap .tech-main {
+  width: 100%;
+}
+.tech .wrap .tech-main .tech-head {
+  margin-bottom: 50px;
+}
+.tech .wrap .tech-main .tech-head h3 {
+  color: #9D52E9;
+  margin-bottom: 10px;
+}
+.tech .wrap .tech-main .tech-card {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  text-align: center;
+}
+.tech .wrap .tech-main .tech-card h3 {
+  color: #EA694D;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+.tech .wrap .tech-main .tech-card .card {
+  width: 24%;
+  background-color: rgba(9, 13, 31, 0.6);
+  height: 200px;
+  padding-top: 40px;
+  border-radius: 10px;
+}
+
+.project {
+  height: 130vh;
+  width: 100%;
+  background-size: cover;
+  background: url("../images/projectBac.jpg");
 }
 /*# sourceMappingURL=main.css.map */

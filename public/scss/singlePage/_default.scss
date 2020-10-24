@@ -21,3 +21,18 @@ body {
     height: 100%;
     margin: auto;
 }
+
+::-webkit-scrollbar {
+    background: #090B1B;
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 8px #090B1B;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(125deg, #A255F0, #4385F4);
+    border-radius: 8px;
+}
