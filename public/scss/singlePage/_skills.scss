@@ -1,0 +1,46 @@
+@import 'variables';
+.skills {
+    background: #0A0D1E;
+    overflow: hidden;
+    .wrap {
+        .skill-main {
+            width: 100%;
+            transform: translateY(150px);
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            grid-column-gap: 150px;
+            grid-row-gap: 40px;
+            justify-content: space-between;
+            .skill-head {
+                color: $secondary-color;
+                margin-bottom: 10px;
+                font-size: 17px;
+            }
+            .pro-line {
+                margin: 10px 0px;
+                height: 5px;
+                width: 60%;
+                background: #09080D;
+                border-radius: 10px;
+                position: relative;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 90%;
+                    height: inherit;
+                    border-radius: 10px;
+                    background: linear-gradient(89.71deg, #A255F0 -3.14%, #4385F4 48.3%);
+                }
+            }
+        }
+    }
+}
+
+.undraw {
+    position: absolute;
+    bottom: 0;
+    left: 41%;
+    transform: translate(-50%, 0%);
+}

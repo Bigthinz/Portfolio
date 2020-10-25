@@ -1,6 +1,44 @@
+@import 'variables';
 .project {
-    height: 130vh;
+    height: 180vh;
     width: 100%;
     background-size: cover;
-    background: url('../images/projectBac.jpg');
+    background: url('../images/projectBacl.png');
+    overflow: hidden;
+    .wrap {
+        .prod-main {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            grid-column-gap: 100px;
+            grid-row-gap: 80px;
+            transform: translateY(70px);
+            .card {
+                width: 313px;
+                height: 290px;
+                position: relative;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    width: 0%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    background: rgba(0, 0, 0, .05);
+                    transition: width .3s ease;
+                }
+                &:hover::before {
+                    width: 100%;
+                }
+                h3 {
+                    color: $secondary-color;
+                }
+            }
+            .shift {
+                transform: translateY(60px);
+            }
+            .unshift {
+                transform: translateY(-60px);
+            }
+        }
+    }
 }

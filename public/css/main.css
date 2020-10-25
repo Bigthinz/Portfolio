@@ -1,5 +1,5 @@
 header {
-  background: linear-gradient(#000004 10.35%, #070916 100%);
+  background: linear-gradient(#000004 10.35%, #0A0D1E 100%);
   background-size: cover;
 }
 
@@ -67,6 +67,11 @@ body {
   width: 70%;
   height: 100%;
   margin: auto;
+  position: relative;
+}
+
+.h3-head {
+  font-size: 17px;
 }
 
 ::-webkit-scrollbar {
@@ -148,7 +153,7 @@ body {
 .about {
   width: 100%;
   height: 600px;
-  background: #070916;
+  background: #0A0D1E;
   margin: auto;
 }
 .about .wrap {
@@ -257,9 +262,88 @@ body {
 }
 
 .project {
-  height: 130vh;
+  height: 180vh;
   width: 100%;
   background-size: cover;
-  background: url("../images/projectBac.jpg");
+  background: url("../images/projectBacl.png");
+  overflow: hidden;
+}
+.project .wrap .prod-main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-column-gap: 100px;
+  grid-row-gap: 80px;
+  transform: translateY(70px);
+}
+.project .wrap .prod-main .card {
+  width: 313px;
+  height: 290px;
+  position: relative;
+}
+.project .wrap .prod-main .card:before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.05);
+  transition: width 0.3s ease;
+}
+.project .wrap .prod-main .card:hover::before {
+  width: 100%;
+}
+.project .wrap .prod-main .card h3 {
+  color: #9D52E9;
+}
+.project .wrap .prod-main .shift {
+  transform: translateY(60px);
+}
+.project .wrap .prod-main .unshift {
+  transform: translateY(-60px);
+}
+
+.skills {
+  background: #0A0D1E;
+  overflow: hidden;
+}
+.skills .wrap .skill-main {
+  width: 100%;
+  transform: translateY(150px);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-column-gap: 150px;
+  grid-row-gap: 40px;
+  justify-content: space-between;
+}
+.skills .wrap .skill-main .skill-head {
+  color: #9D52E9;
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+.skills .wrap .skill-main .pro-line {
+  margin: 10px 0px;
+  height: 5px;
+  width: 60%;
+  background: #09080D;
+  border-radius: 10px;
+  position: relative;
+}
+.skills .wrap .skill-main .pro-line::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: inherit;
+  border-radius: 10px;
+  background: linear-gradient(89.71deg, #A255F0 -3.14%, #4385F4 48.3%);
+}
+
+.undraw {
+  position: absolute;
+  bottom: 0;
+  left: 41%;
+  transform: translate(-50%, 0%);
 }
 /*# sourceMappingURL=main.css.map */
