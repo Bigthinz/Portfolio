@@ -438,6 +438,10 @@ body {
 }
 
 @media only screen and (max-width: 480px) {
+  .wrap {
+    width: 90% !important;
+  }
+
   .humburger {
     display: block;
   }
@@ -451,7 +455,7 @@ body {
   }
 
   .profile-head {
-    height: 50vh;
+    height: 90vh;
   }
 
   .profile-title h1 {
@@ -468,6 +472,7 @@ body {
 
   .prod-main {
     flex-direction: column;
+    justify-content: center !important;
   }
 
   .skill-card {
