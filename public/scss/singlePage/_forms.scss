@@ -1,0 +1,77 @@
+@font-face {
+    src: url('../fonts/Orbitron-VariableFont_wght.ttf');
+    font-family: Oswald;
+}
+
+.forms {
+    background: url('../images/formbac.png');
+    background-size: cover;
+    z-index: -1;
+    .wrap {
+        .form-head {
+            width: 100%;
+            min-height: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .form {
+                // width: 40%;
+                height: 80%;
+                flex-basis: 30%;
+                .form-data {
+                    background: rgba(9, 13, 31, .5);
+                    padding: 40px 40px;
+                    border-radius: 10px;
+                    .form-input {
+                        width: 50%;
+                    }
+                    div {
+                        margin: 20px 0px;
+                        position: relative;
+                        label input {
+                            height: 30px;
+                            width: 100%;
+                            background: none;
+                            border: 1px solid $secondary-color;
+                            border-radius: 5px;
+                            color: #f3f3f3;
+                            padding-left: 5px;
+                            font-family: Oswald;
+                        }
+                        label textarea {
+                            background: none;
+                            border: 1px solid $secondary-color;
+                            color: #f3f3f3;
+                            border-radius: 5px;
+                            margin-top: 10px;
+                            padding-left: 5px;
+                            padding-top: 10px;
+                            font-family: Oswald;
+                            letter-spacing: 2px;
+                            color: #f9f9f9;
+                            font-size: 12px;
+                        }
+                        input {
+                            margin-top: 10px;
+                            letter-spacing: 2px;
+                            color: #f9f9f9;
+                            font-size: 12px;
+                            &[type=text]:focus {
+                                border: 2px solid $secondary-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.send {
+    text-decoration: none;
+    color: #f9f9f9;
+    background: #4385F4;
+    padding: 10px 20px;
+    position: absolute;
+    border-radius: 5px;
+}

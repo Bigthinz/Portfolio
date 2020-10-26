@@ -6,6 +6,7 @@ header {
 nav {
   width: 100%;
   border-bottom: 2px solid #09080D;
+  position: relative;
 }
 nav .wrap {
   width: 70%;
@@ -41,10 +42,17 @@ nav .wrap .nav-start .nav-list ul li a {
   text-decoration: none;
   color: #C3C3C3;
 }
-nav .wrap .humburger {
+nav .humburger {
+  display: block;
   font-size: 30px;
   font-weight: bold;
   position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background: #05040A;
+  padding: 10px 25px;
+  color: #EA694D;
 }
 
 @font-face {
@@ -61,6 +69,7 @@ body {
   color: #fff;
   font-size: 13px;
   font-family: Ibm;
+  background-color: #090D1F;
 }
 
 .wrap {
@@ -111,7 +120,7 @@ body {
 }
 .profile-head .wrap .profile-title h1 {
   font-family: Oswald;
-  font-size: 60px !important;
+  font-size: 60px;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 10px;
@@ -152,17 +161,18 @@ body {
 
 .about {
   width: 100%;
-  height: 600px;
+  min-height: 100vh;
   background: #0A0D1E;
   margin: auto;
 }
 .about .wrap {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .about .wrap .about-pin {
   width: 100%;
-  height: inherit;
+  height: 100%;
   overflow: hidden;
 }
 .about .wrap .about-pin .title {
@@ -186,11 +196,12 @@ body {
   justify-content: space-between;
   width: 100%;
   height: 100%;
+  flex-wrap: wrap;
   transform: translateY(100px);
 }
 .about .wrap .about-pin .row .about-detail {
   height: 100%;
-  width: 40%;
+  flex-basis: 40%;
 }
 .about .wrap .about-pin .row .about-detail .card {
   border-radius: 7px;
@@ -199,10 +210,11 @@ body {
   box-shadow: 0px 3px 5px 5px rgba(9, 8, 13, 0.32);
 }
 .about .wrap .about-pin .row .about-detail .card h3 {
+  color: #9D52E9;
   margin-bottom: 10px;
 }
 .about .wrap .about-pin .row .about-panel-2 {
-  width: 40%;
+  flex-basis: 40%;
 }
 .about .wrap .about-pin .row .about-panel-2 h3 {
   color: #9D52E9;
@@ -247,6 +259,7 @@ body {
   justify-content: space-between;
   width: 100%;
   text-align: center;
+  flex-wrap: wrap;
 }
 .tech .wrap .tech-main .tech-card h3 {
   color: #EA694D;
@@ -254,7 +267,7 @@ body {
   text-transform: capitalize;
 }
 .tech .wrap .tech-main .tech-card .card {
-  width: 24%;
+  flex-basis: 24%;
   background-color: rgba(9, 13, 31, 0.6);
   height: 200px;
   padding-top: 40px;
@@ -262,21 +275,20 @@ body {
 }
 
 .project {
-  height: 180vh;
+  min-height: 180vh;
   width: 100%;
   background-size: cover;
   background: url("../images/projectBacl.png");
   overflow: hidden;
 }
 .project .wrap .prod-main {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  grid-column-gap: 100px;
-  grid-row-gap: 80px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   transform: translateY(70px);
 }
 .project .wrap .prod-main .card {
-  width: 313px;
+  flex-basis: 44%;
   height: 290px;
   position: relative;
 }
@@ -306,14 +318,13 @@ body {
 .skills {
   background: #0A0D1E;
   overflow: hidden;
+  min-height: 110vh;
 }
 .skills .wrap .skill-main {
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
   transform: translateY(150px);
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  grid-column-gap: 150px;
-  grid-row-gap: 40px;
   justify-content: space-between;
 }
 .skills .wrap .skill-main .skill-head {
@@ -345,5 +356,143 @@ body {
   bottom: 0;
   left: 41%;
   transform: translate(-50%, 0%);
+}
+
+.skill-card {
+  flex-basis: 44%;
+  margin-bottom: 7px;
+}
+
+@font-face {
+  src: url("../fonts/Orbitron-VariableFont_wght.ttf");
+  font-family: Oswald;
+}
+.forms {
+  background: url("../images/formbac.png");
+  background-size: cover;
+  z-index: -1;
+}
+.forms .wrap .form-head {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.forms .wrap .form-head .form {
+  height: 80%;
+  flex-basis: 30%;
+}
+.forms .wrap .form-head .form .form-data {
+  background: rgba(9, 13, 31, 0.5);
+  padding: 40px 40px;
+  border-radius: 10px;
+}
+.forms .wrap .form-head .form .form-data .form-input {
+  width: 50%;
+}
+.forms .wrap .form-head .form .form-data div {
+  margin: 20px 0px;
+  position: relative;
+}
+.forms .wrap .form-head .form .form-data div label input {
+  height: 30px;
+  width: 100%;
+  background: none;
+  border: 1px solid #9D52E9;
+  border-radius: 5px;
+  color: #f3f3f3;
+  padding-left: 5px;
+  font-family: Oswald;
+}
+.forms .wrap .form-head .form .form-data div label textarea {
+  background: none;
+  border: 1px solid #9D52E9;
+  color: #f3f3f3;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding-left: 5px;
+  padding-top: 10px;
+  font-family: Oswald;
+  letter-spacing: 2px;
+  color: #f9f9f9;
+  font-size: 12px;
+}
+.forms .wrap .form-head .form .form-data div input {
+  margin-top: 10px;
+  letter-spacing: 2px;
+  color: #f9f9f9;
+  font-size: 12px;
+}
+.forms .wrap .form-head .form .form-data div input[type=text]:focus {
+  border: 2px solid #9D52E9;
+}
+
+.send {
+  text-decoration: none;
+  color: #f9f9f9;
+  background: #4385F4;
+  padding: 10px 20px;
+  position: absolute;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 480px) {
+  .humburger {
+    display: block;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .profile-img {
+    display: none;
+  }
+
+  .profile-head {
+    height: 50vh;
+  }
+
+  .profile-title h1 {
+    font-size: 20px !important;
+  }
+
+  .about-pin .row {
+    flex-direction: column;
+  }
+
+  .tech-card {
+    flex-direction: column;
+  }
+
+  .prod-main {
+    flex-direction: column;
+  }
+
+  .skill-card {
+    flex-direction: column;
+  }
+
+  .skills .undraw img {
+    width: 80%;
+  }
+
+  .form-data {
+    padding: 0px !important;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .profile-img {
+    display: none;
+  }
+
+  .about-pin .row {
+    flex-direction: column;
+  }
+
+  .tech-card {
+    flex-direction: column;
+  }
 }
 /*# sourceMappingURL=main.css.map */

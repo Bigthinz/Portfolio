@@ -5,5 +5,6 @@ $nav-color:#C3C3C3;
 @mixin flex {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     // align-items: center;
 }

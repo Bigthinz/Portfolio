@@ -1,19 +1,23 @@
 @import 'variables';
 .project {
-    height: 180vh;
+    min-height: 180vh;
     width: 100%;
     background-size: cover;
     background: url('../images/projectBacl.png');
     overflow: hidden;
     .wrap {
         .prod-main {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            grid-column-gap: 100px;
-            grid-row-gap: 80px;
+            // display: grid;
+            // grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            // grid-column-gap: 100px;
+            // grid-row-gap: 80px;
+            // transform: translateY(70px);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
             transform: translateY(70px);
             .card {
-                width: 313px;
+                flex-basis: 44%;
                 height: 290px;
                 position: relative;
                 &:before {

@@ -2,14 +2,17 @@
 .skills {
     background: #0A0D1E;
     overflow: hidden;
+    min-height: 110vh;
     .wrap {
         .skill-main {
+            display: flex;
+            flex-wrap: wrap;
             width: 100%;
             transform: translateY(150px);
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            grid-column-gap: 150px;
-            grid-row-gap: 40px;
+            // display: grid;
+            // grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            // grid-column-gap: 150px;
+            // grid-row-gap: 40px;
             justify-content: space-between;
             .skill-head {
                 color: $secondary-color;
@@ -43,4 +46,10 @@
     bottom: 0;
     left: 41%;
     transform: translate(-50%, 0%);
+}
+
+.skill-card {
+    flex-basis: 44%;
+    // margin: 22px auto;
+    margin-bottom: 7px;
 }

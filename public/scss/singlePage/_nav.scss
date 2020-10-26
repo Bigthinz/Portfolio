@@ -8,6 +8,7 @@ header {
 nav {
     width: 100%;
     border-bottom: 2px solid #09080D;
+    position: relative;
     .wrap {
         width: 70%;
         height: 60px;
@@ -43,10 +44,17 @@ nav {
                 }
             }
         }
-        .humburger {
-            font-size: 30px;
-            font-weight: bold;
-            position: absolute;
-        }
+    }
+    .humburger {
+        display: block;
+        font-size: 30px;
+        font-weight: bold;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        background: #05040A;
+        padding: 10px 25px;
+        color: #EA694D;
     }
 }

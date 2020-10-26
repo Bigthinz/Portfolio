@@ -4,4 +4,55 @@
 @import './singlePage/_about';
 @import './singlePage/_technologies';
 @import './singlePage/_project';
-@import './singlePage/_skills'
+@import './singlePage/_skills';
+@import './singlePage/_forms';
+@media only screen and (max-width:480px) {
+    .humburger {
+        display: block;
+    }
+    .nav-list {
+        display: none;
+    }
+    .profile-img {
+        display: none;
+    }
+    .profile-head {
+        height: 50vh;
+    }
+    .profile-title h1 {
+        font-size: 20px !important;
+    }
+    .about-pin .row {
+        flex-direction: column;
+    }
+    .tech-card {
+        flex-direction: column;
+    }
+    .prod-main {
+        flex-direction: column;
+    }
+    .skill-card {
+        flex-direction: column;
+    }
+    .skills .undraw img {
+        width: 80%;
+    }
+    // .form-head .form-title{
+    //     height: ;
+    // }
+    .form-data {
+        padding: 0px !important;
+    }
+}
+
+@media only screen and (max-width:760px) {
+    .profile-img {
+        display: none;
+    }
+    .about-pin .row {
+        flex-direction: column;
+    }
+    .tech-card {
+        flex-direction: column;
+    }
+}
