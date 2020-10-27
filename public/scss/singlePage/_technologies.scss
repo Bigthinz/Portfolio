@@ -2,9 +2,11 @@
 .tech {
     background: url('../images/serviceBac.jpg');
     background-size: cover;
+    min-height: 80%;
     .wrap {
         display: flex;
         align-items: center;
+        height: 100%;
         .tech-main {
             width: 100%;
             .tech-head {

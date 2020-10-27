@@ -74,7 +74,6 @@ body {
 
 .wrap {
   width: 70%;
-  height: 100%;
   margin: auto;
   position: relative;
 }
@@ -139,11 +138,9 @@ body {
   text-transform: capitalize;
 }
 .profile-head .wrap .profile-title .social {
-  font-size: 17px !important;
   text-transform: uppercase;
   padding: 10px 20px 0px 0px;
-  color: #C3C3C3;
-  font-family: Oswald;
+  font-weight: bold;
 }
 .profile-head .wrap .profile-img {
   border-radius: 50%;
@@ -161,7 +158,7 @@ body {
 
 .about {
   width: 100%;
-  min-height: 100vh;
+  min-height: 90vh;
   background: #0A0D1E;
   margin: auto;
 }
@@ -169,15 +166,15 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  height: 100%;
 }
 .about .wrap .about-pin {
   width: 100%;
   height: 100%;
-  overflow: hidden;
 }
 .about .wrap .about-pin .title {
   color: #EA694D;
-  transform: translateY(50px);
+  margin-bottom: 40px;
   font-size: 17px;
   text-transform: capitalize;
   position: relative;
@@ -195,11 +192,11 @@ body {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 100%;
-  flex-wrap: wrap;
-  transform: translateY(100px);
+  position: relative;
 }
 .about .wrap .about-pin .row .about-detail {
+  display: flex;
+  align-items: center;
   height: 100%;
   flex-basis: 40%;
 }
@@ -239,10 +236,12 @@ body {
 .tech {
   background: url("../images/serviceBac.jpg");
   background-size: cover;
+  min-height: 80%;
 }
 .tech .wrap {
   display: flex;
   align-items: center;
+  height: 100%;
 }
 .tech .wrap .tech-main {
   width: 100%;
@@ -275,21 +274,19 @@ body {
 }
 
 .project {
-  min-height: 180vh;
+  min-height: 100vh;
   width: 100%;
   background-size: cover;
   background: url("../images/projectBacl.png");
-  overflow: hidden;
 }
 .project .wrap .prod-main {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  transform: translateY(70px);
+  margin-top: 90px;
 }
 .project .wrap .prod-main .card {
   flex-basis: 44%;
-  height: 290px;
   position: relative;
 }
 .project .wrap .prod-main .card:before {
@@ -315,32 +312,135 @@ body {
   transform: translateY(-60px);
 }
 
-.skills {
-  background: #0A0D1E;
-  overflow: hidden;
-  min-height: 110vh;
-}
 .skills .wrap .skill-main {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  transform: translateY(150px);
-  justify-content: space-between;
+  align-items: space-between;
+  margin-top: 90px;
 }
 .skills .wrap .skill-main .skill-head {
   color: #9D52E9;
   margin-bottom: 10px;
   font-size: 17px;
 }
-.skills .wrap .skill-main .pro-line {
+.skills .wrap .skill-main .brand-creation {
   margin: 10px 0px;
   height: 5px;
-  width: 60%;
+  width: 90%;
   background: #09080D;
   border-radius: 10px;
   position: relative;
 }
-.skills .wrap .skill-main .pro-line::before {
+.skills .wrap .skill-main .brand-creation::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: inherit;
+  border-radius: 10px;
+  background: linear-gradient(89.71deg, #A255F0 -3.14%, #4385F4 48.3%);
+}
+.skills .wrap .skill-main .frontend {
+  margin: 10px 0px;
+  height: 5px;
+  width: 90%;
+  background: #09080D;
+  border-radius: 10px;
+  position: relative;
+}
+.skills .wrap .skill-main .frontend::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 85%;
+  height: inherit;
+  border-radius: 10px;
+  background: linear-gradient(89.71deg, #A255F0 -3.14%, #4385F4 48.3%);
+}
+.skills .wrap .skill-main .creative-design {
+  margin: 10px 0px;
+  height: 5px;
+  width: 90%;
+  background: #09080D;
+  border-radius: 10px;
+  position: relative;
+}
+.skills .wrap .skill-main .creative-design::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 92%;
+  height: inherit;
+  border-radius: 10px;
+  background: linear-gradient(89.71deg, #A255F0 -3.14%, #4385F4 48.3%);
+}
+.skills .wrap .skill-main .backend {
+  margin: 10px 0px;
+  height: 5px;
+  width: 90%;
+  background: #09080D;
+  border-radius: 10px;
+  position: relative;
+}
+.skills .wrap .skill-main .backend::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 85%;
+  height: inherit;
+  border-radius: 10px;
+  background: linear-gradient(89.71deg, #A255F0 -3.14%, #4385F4 48.3%);
+}
+.skills .wrap .skill-main .content-creation {
+  margin: 10px 0px;
+  height: 5px;
+  width: 90%;
+  background: #09080D;
+  border-radius: 10px;
+  position: relative;
+}
+.skills .wrap .skill-main .content-creation::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: inherit;
+  border-radius: 10px;
+  background: linear-gradient(89.71deg, #A255F0 -3.14%, #4385F4 48.3%);
+}
+.skills .wrap .skill-main .mobile {
+  margin: 10px 0px;
+  height: 5px;
+  width: 90%;
+  background: #09080D;
+  border-radius: 10px;
+  position: relative;
+}
+.skills .wrap .skill-main .mobile::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: inherit;
+  border-radius: 10px;
+  background: linear-gradient(89.71deg, #A255F0 -3.14%, #4385F4 48.3%);
+}
+.skills .wrap .skill-main .ui-ux {
+  margin: 10px 0px;
+  height: 5px;
+  width: 90%;
+  background: #09080D;
+  border-radius: 10px;
+  position: relative;
+}
+.skills .wrap .skill-main .ui-ux::before {
   content: "";
   position: absolute;
   top: 0;
@@ -360,6 +460,7 @@ body {
 
 .skill-card {
   flex-basis: 44%;
+  margin: 22px auto;
   margin-bottom: 7px;
 }
 
@@ -455,11 +556,11 @@ body {
   }
 
   .profile-head {
-    height: 90vh;
+    height: 70vh;
   }
 
   .profile-title h1 {
-    font-size: 20px !important;
+    font-size: 30px !important;
   }
 
   .about-pin .row {
@@ -474,17 +575,32 @@ body {
     flex-direction: column;
     justify-content: center !important;
   }
+  .prod-main .card {
+    margin: 20px 0px;
+  }
 
   .skill-card {
     flex-direction: column;
+    flex-basis: 90%;
   }
 
   .skills .undraw img {
-    width: 80%;
+    width: 60%;
+    transform: translateX(110%);
+  }
+
+  .form-head .form-title {
+    height: 100%;
   }
 
   .form-data {
     padding: 0px !important;
+  }
+
+  .content-creation,
+.creative-design,
+.brand-creation {
+    display: none;
   }
 }
 @media only screen and (max-width: 760px) {

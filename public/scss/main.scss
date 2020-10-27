@@ -20,10 +20,10 @@
         display: none;
     }
     .profile-head {
-        height: 90vh;
+        height: 70vh;
     }
     .profile-title h1 {
-        font-size: 20px !important;
+        font-size: 30px !important;
     }
     .about-pin .row {
         flex-direction: column;
@@ -34,18 +34,28 @@
     .prod-main {
         flex-direction: column;
         justify-content: center !important;
+        .card {
+            margin: 20px 0px;
+        }
     }
     .skill-card {
         flex-direction: column;
+        flex-basis: 90%;
     }
     .skills .undraw img {
-        width: 80%;
+        width: 60%;
+        transform: translateX(110%)
     }
-    // .form-head .form-title{
-    //     height: ;
-    // }
+    .form-head .form-title {
+        height: 100%;
+    }
     .form-data {
         padding: 0px !important;
+    }
+    .content-creation,
+    .creative-design,
+    .brand-creation {
+        display: none;
     }
 }
 

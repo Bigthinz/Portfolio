@@ -1,28 +1,153 @@
 @import 'variables';
 .skills {
-    background: #0A0D1E;
-    overflow: hidden;
-    min-height: 110vh;
+    // min-height: 110vh;
     .wrap {
         .skill-main {
             display: flex;
             flex-wrap: wrap;
             width: 100%;
-            transform: translateY(150px);
+            align-items: space-between;
+            margin-top: 90px;
             // display: grid;
             // grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
             // grid-column-gap: 150px;
             // grid-row-gap: 40px;
-            justify-content: space-between;
+            // justify-content: space-between;
             .skill-head {
                 color: $secondary-color;
                 margin-bottom: 10px;
                 font-size: 17px;
             }
-            .pro-line {
+            // .pro-line {
+            //     margin: 10px 0px;
+            //     height: 5px;
+            //     width: 90%;
+            //     background: #09080D;
+            //     border-radius: 10px;
+            //     position: relative;
+            //     &::before {
+            //         content: '';
+            //         position: absolute;
+            //         top: 0;
+            //         left: 0;
+            //         width: 90%;
+            //         height: inherit;
+            //         border-radius: 10px;
+            //         background: linear-gradient(89.71deg, #A255F0 -3.14%, #4385F4 48.3%);
+            //     }
+            // }
+            .brand-creation {
                 margin: 10px 0px;
                 height: 5px;
-                width: 60%;
+                width: 90%;
+                background: #09080D;
+                border-radius: 10px;
+                position: relative;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 80%;
+                    height: inherit;
+                    border-radius: 10px;
+                    background: linear-gradient(89.71deg, #A255F0 -3.14%, #4385F4 48.3%);
+                }
+            }
+            .frontend {
+                margin: 10px 0px;
+                height: 5px;
+                width: 90%;
+                background: #09080D;
+                border-radius: 10px;
+                position: relative;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 85%;
+                    height: inherit;
+                    border-radius: 10px;
+                    background: linear-gradient(89.71deg, #A255F0 -3.14%, #4385F4 48.3%);
+                }
+            }
+            .creative-design {
+                margin: 10px 0px;
+                height: 5px;
+                width: 90%;
+                background: #09080D;
+                border-radius: 10px;
+                position: relative;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 92%;
+                    height: inherit;
+                    border-radius: 10px;
+                    background: linear-gradient(89.71deg, #A255F0 -3.14%, #4385F4 48.3%);
+                }
+            }
+            .backend {
+                margin: 10px 0px;
+                height: 5px;
+                width: 90%;
+                background: #09080D;
+                border-radius: 10px;
+                position: relative;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 85%;
+                    height: inherit;
+                    border-radius: 10px;
+                    background: linear-gradient(89.71deg, #A255F0 -3.14%, #4385F4 48.3%);
+                }
+            }
+            .content-creation {
+                margin: 10px 0px;
+                height: 5px;
+                width: 90%;
+                background: #09080D;
+                border-radius: 10px;
+                position: relative;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 80%;
+                    height: inherit;
+                    border-radius: 10px;
+                    background: linear-gradient(89.71deg, #A255F0 -3.14%, #4385F4 48.3%);
+                }
+            }
+            .mobile {
+                margin: 10px 0px;
+                height: 5px;
+                width: 90%;
+                background: #09080D;
+                border-radius: 10px;
+                position: relative;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 70%;
+                    height: inherit;
+                    border-radius: 10px;
+                    background: linear-gradient(89.71deg, #A255F0 -3.14%, #4385F4 48.3%);
+                }
+            }
+            .ui-ux {
+                margin: 10px 0px;
+                height: 5px;
+                width: 90%;
                 background: #09080D;
                 border-radius: 10px;
                 position: relative;
@@ -50,6 +175,6 @@
 
 .skill-card {
     flex-basis: 44%;
-    // margin: 22px auto;
+    margin: 22px auto;
     margin-bottom: 7px;
 }
