@@ -20,10 +20,13 @@
         display: none;
     }
     .profile-head {
-        height: 70vh;
+        height: 80vh;
     }
     .profile-title h1 {
         font-size: 30px !important;
+    }
+    .about {
+        height: 30vh !important;
     }
     .about-pin .row {
         flex-direction: column;
@@ -42,9 +45,8 @@
         flex-direction: column;
         flex-basis: 90%;
     }
-    .skills .undraw img {
-        width: 60%;
-        transform: translateX(110%)
+    .skills .undraw {
+        display: none;
     }
     .form-head .form-title {
         height: 100%;
@@ -55,6 +57,9 @@
     .content-creation,
     .creative-design,
     .brand-creation {
+        display: none;
+    }
+    .about-p {
         display: none;
     }
 }

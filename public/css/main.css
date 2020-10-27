@@ -80,6 +80,7 @@ body {
 
 .h3-head {
   font-size: 17px;
+  margin-bottom: 10px;
 }
 
 ::-webkit-scrollbar {
@@ -133,8 +134,8 @@ body {
   text-decoration: none;
   color: #fff;
   background: #5145F8;
-  padding: 10px 20px;
-  border-radius: 15px 0px;
+  padding: 10px 15px;
+  border-radius: 5px;
   text-transform: capitalize;
 }
 .profile-head .wrap .profile-title .social {
@@ -556,11 +557,15 @@ body {
   }
 
   .profile-head {
-    height: 70vh;
+    height: 80vh;
   }
 
   .profile-title h1 {
     font-size: 30px !important;
+  }
+
+  .about {
+    height: 30vh !important;
   }
 
   .about-pin .row {
@@ -584,9 +589,8 @@ body {
     flex-basis: 90%;
   }
 
-  .skills .undraw img {
-    width: 60%;
-    transform: translateX(110%);
+  .skills .undraw {
+    display: none;
   }
 
   .form-head .form-title {
@@ -600,6 +604,10 @@ body {
   .content-creation,
 .creative-design,
 .brand-creation {
+    display: none;
+  }
+
+  .about-p {
     display: none;
   }
 }
