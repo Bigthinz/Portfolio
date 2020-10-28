@@ -313,12 +313,16 @@ body {
   transform: translateY(-60px);
 }
 
+.skills {
+  min-height: 90vh;
+}
 .skills .wrap .skill-main {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  align-items: space-between;
-  margin-top: 90px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20%;
 }
 .skills .wrap .skill-main .skill-head {
   color: #9D52E9;
@@ -328,7 +332,7 @@ body {
 .skills .wrap .skill-main .brand-creation {
   margin: 10px 0px;
   height: 5px;
-  width: 90%;
+  width: 70%;
   background: #09080D;
   border-radius: 10px;
   position: relative;
@@ -346,7 +350,7 @@ body {
 .skills .wrap .skill-main .frontend {
   margin: 10px 0px;
   height: 5px;
-  width: 90%;
+  width: 70%;
   background: #09080D;
   border-radius: 10px;
   position: relative;
@@ -364,7 +368,7 @@ body {
 .skills .wrap .skill-main .creative-design {
   margin: 10px 0px;
   height: 5px;
-  width: 90%;
+  width: 70%;
   background: #09080D;
   border-radius: 10px;
   position: relative;
@@ -382,7 +386,7 @@ body {
 .skills .wrap .skill-main .backend {
   margin: 10px 0px;
   height: 5px;
-  width: 90%;
+  width: 70%;
   background: #09080D;
   border-radius: 10px;
   position: relative;
@@ -400,7 +404,7 @@ body {
 .skills .wrap .skill-main .content-creation {
   margin: 10px 0px;
   height: 5px;
-  width: 90%;
+  width: 70%;
   background: #09080D;
   border-radius: 10px;
   position: relative;
@@ -418,7 +422,7 @@ body {
 .skills .wrap .skill-main .mobile {
   margin: 10px 0px;
   height: 5px;
-  width: 90%;
+  width: 70%;
   background: #09080D;
   border-radius: 10px;
   position: relative;
@@ -436,7 +440,7 @@ body {
 .skills .wrap .skill-main .ui-ux {
   margin: 10px 0px;
   height: 5px;
-  width: 90%;
+  width: 70%;
   background: #09080D;
   border-radius: 10px;
   position: relative;
@@ -455,14 +459,20 @@ body {
 .undraw {
   position: absolute;
   bottom: 0;
-  left: 41%;
+  left: 45%;
   transform: translate(-50%, 0%);
+}
+.undraw img {
+  width: 80%;
 }
 
 .skill-card {
-  flex-basis: 44%;
+  flex-basis: 40%;
   margin: 22px auto;
   margin-bottom: 7px;
+}
+.skill-card .techs {
+  color: #EA694D;
 }
 
 @font-face {
@@ -601,9 +611,9 @@ body {
     padding: 0px !important;
   }
 
-  .content-creation,
-.creative-design,
-.brand-creation {
+  .content-creation-div,
+.creative-design-div,
+.brand-creation-div {
     display: none;
   }
 

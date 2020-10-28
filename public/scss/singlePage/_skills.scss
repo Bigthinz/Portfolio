@@ -1,13 +1,15 @@
 @import 'variables';
 .skills {
-    // min-height: 110vh;
+    min-height: 90vh;
     .wrap {
         .skill-main {
             display: flex;
             flex-wrap: wrap;
             width: 100%;
-            align-items: space-between;
-            margin-top: 90px;
+            align-items: center;
+            justify-content: space-between;
+            // align-items: space-between;
+            margin-top: 20%;
             // display: grid;
             // grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
             // grid-column-gap: 150px;
@@ -39,7 +41,7 @@
             .brand-creation {
                 margin: 10px 0px;
                 height: 5px;
-                width: 90%;
+                width: 70%;
                 background: #09080D;
                 border-radius: 10px;
                 position: relative;
@@ -57,7 +59,7 @@
             .frontend {
                 margin: 10px 0px;
                 height: 5px;
-                width: 90%;
+                width: 70%;
                 background: #09080D;
                 border-radius: 10px;
                 position: relative;
@@ -75,7 +77,7 @@
             .creative-design {
                 margin: 10px 0px;
                 height: 5px;
-                width: 90%;
+                width: 70%;
                 background: #09080D;
                 border-radius: 10px;
                 position: relative;
@@ -93,7 +95,7 @@
             .backend {
                 margin: 10px 0px;
                 height: 5px;
-                width: 90%;
+                width: 70%;
                 background: #09080D;
                 border-radius: 10px;
                 position: relative;
@@ -111,7 +113,7 @@
             .content-creation {
                 margin: 10px 0px;
                 height: 5px;
-                width: 90%;
+                width: 70%;
                 background: #09080D;
                 border-radius: 10px;
                 position: relative;
@@ -129,7 +131,7 @@
             .mobile {
                 margin: 10px 0px;
                 height: 5px;
-                width: 90%;
+                width: 70%;
                 background: #09080D;
                 border-radius: 10px;
                 position: relative;
@@ -147,7 +149,7 @@
             .ui-ux {
                 margin: 10px 0px;
                 height: 5px;
-                width: 90%;
+                width: 70%;
                 background: #09080D;
                 border-radius: 10px;
                 position: relative;
@@ -169,12 +171,18 @@
 .undraw {
     position: absolute;
     bottom: 0;
-    left: 41%;
+    left: 45%;
     transform: translate(-50%, 0%);
+    img {
+        width: 80%;
+    }
 }
 
 .skill-card {
-    flex-basis: 44%;
+    flex-basis: 40%;
     margin: 22px auto;
     margin-bottom: 7px;
+    .techs {
+        color: $next-color;
+    }
 }
